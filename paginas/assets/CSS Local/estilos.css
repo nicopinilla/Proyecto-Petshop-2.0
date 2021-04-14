@@ -1,0 +1,65 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    font-size: 1.3rem;
+    line-height: 1.4em;
+    margin: 0;
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    /* lo alineamos al centro */
+    align-items: center;
+  
+    flex-wrap: wrap;
+  }
+
+.container-text {
+    width: 85%;
+    max-width: 850px;
+    margin: auto;
+}
+
+.h1 {
+    font-size: 2rem;
+    line-height: 1.3em;
+}
+
+.encabezado {
+    background: aquamarine;
+    color: black;
+}
+
+.encabezado a {
+    color: black;
+    text-decoration: none;
+}
+
+.Logo {
+    float: left;
+    align-items: center;
+    padding: 20px;
+
+} 
+
+.Navi {
+    margin: auto;
+}
+
+
+.Navi ul {
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    
+}
+
+.Navi ul li {
+    display: inline-block;
+}
+
+.Navi ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+}
