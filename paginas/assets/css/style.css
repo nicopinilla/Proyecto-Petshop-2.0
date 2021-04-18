@@ -3952,6 +3952,7 @@ label {
 }
 .footer-area .footer-top {
   padding: 100px 0 80px 0;
+  margin-top: 20px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .footer-area .footer-top {
