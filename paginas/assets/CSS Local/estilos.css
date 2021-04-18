@@ -113,5 +113,10 @@ body {
     margin: auto;
 }
 
+.precabezera-mini{
+    padding: 0px;
+    margin: 0px;
+    background-color: #d6d6d1 !important;
+}
 
 /*Fin codigo stiven*/
