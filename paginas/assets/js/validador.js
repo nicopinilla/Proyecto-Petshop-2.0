@@ -2,25 +2,41 @@
 
 $("#formulario-contacto").validate({
     rules: {
-        "txtEmail": {
-            required: true,
-            email: true,
-            minlength:10
-        },
         "txtNombre":{
-            required:true,
-            minlength: 10
-        }
+        required:true,
+        minlength: 10
+    },
+        "txtEmail": {
+        required: true,
+        email: true,
+        minlength:10
+    },
+        "txtTema": {
+        required: true,
+        minlength:10
+    },
+        "txtMensaje":{
+        required:true,
+        minlength:50
+        },
     }, // --> Fin de reglas
     messages: {
+        "txtNombre":{
+            required:'Introdusca su nombre',
+            minlength: 'Ingrese 10 caracteres como minimo'
+        },
         "txtEmail": {
-            required: 'Ingrese email',
+            required: 'Ingrese su email',
             email: 'No cumple formato',
             minlength:'la wea'
         },
-        "txtNombre":{
-            required:'Introdusca un mensaje porfavor',
-            minlength: 'Ingrese 15 caracteres como minimo'
+        "txtTema": {
+            required: 'Ingrese un tema',
+            minlength:'Ingrese 10 caracteres como minimo'
+        },
+        "txtMensaje":{
+            required: 'Ingrese un mensaje',
+            minlength:'Ingrese 50 caracteres como minimo'
         }
     } //-->Fin de mensajes
 
