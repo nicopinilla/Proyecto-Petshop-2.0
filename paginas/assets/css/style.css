@@ -6876,11 +6876,11 @@ body.offcanvas-open {
 .grand-totall .grand-totall-title span {
   float: right;
 }
-.grand-totall a {
+.grand-totall  a{
   background-color: #f2ab00;
   border-radius: 30px;
   color: #fff;
-  display: block;
+  display: block !important;
   font-size: 14px;
   font-weight: 700;
   line-height: 1;
@@ -8631,7 +8631,9 @@ body.offcanvas-open {
   outline: none;
   transition: all 0.3s ease 0s;
   border-radius: 5px;
-  display: block ;
+  display: inline ;
+  margin-right: 25px;
+
 }
 .contact-area .custom-row-2 .contact-form .contact-form-style button:hover {
   background: #333;
