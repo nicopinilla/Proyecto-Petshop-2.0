@@ -161,7 +161,7 @@
                             <div class="product-details-img product-details-tab position-relative">
                                 <div class="zoompro-wrap zoompro-2">
                                     <div class="zoompro-border zoompro-span">
-                                        <img class="zoompro w-100" src="assets/images/product-image/mini/2.jpg" data-zoom-image="assets/images/product-image/zoom/2.jpg" alt="" />
+                                        <img class="zoompro w-100" src="assets/images/product-image/mini/2.jpg" id='imagen' data-zoom-image="assets/images/product-image/zoom/2.jpg" alt="" />
                                     </div>
                                     <div class="zoompro-border zoompro-span">
                                         <img class="zoompro w-100" src="assets/images/product-image/mini/3.jpg" data-zoom-image="assets/images/product-image/zoom/3.jpg" alt="" />
@@ -207,14 +207,13 @@
                                 <div class="pricing-meta">
                                     <ul>
                                         <li class="old-price">$19.990</li>
-                                        <li class="cuttent-price">10.990</li>
+                                        <li id='precio' class="cuttent-price">10.990</li>
                                     </ul>
                                 </div>
                                 <div class="pro-details-list">
                                     <ul>
-                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, magnam?</li>
-                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione perspiciatis minima in repudiandae quam laudantium!</li>
-                                        <li>Lorem ipsum dolor sit amet.</li>
+                                        <li id='descripcion'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, magnam?</li>
+                                       
                                     </ul>
                                 </div>
                                 <div class="pro-details-quality mt-0px">
@@ -382,7 +381,8 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="section-title">
-                                <h2>También podría gustarte</h2>
+                                <h2>También podría gustarte</h2>+
+                                3
                             </div>
                         </div>
                     </div>
@@ -736,5 +736,41 @@
 
         <!-- Main Activation JS -->
         <script src="assets/js/main.js"></script>
+        <script >
+            
+            const valores = window.location.search;
+
+        const urlParams = new URLSearchParams(valores);
+
+        //Accedemos a los valores
+        var precio = urlParams.get('precio');
+        var preciohtml = document.getElementById('precio')
+        preciohtml.innerHTML =precio
+        console.log(precio)
+
+        var imagen = urlParams.get('imagen');
+        var imagenhtml = document.getElementById('imagen')
+        imagenhtml.src =imagen
+        console.log(imagen)
+
+
+        
+        //Accedemos a los valores
+        var precio = urlParams.get('precio');
+        var preciohtml = document.getElementById('precio')
+        preciohtml.innerHTML =precio
+        console.log(precio)
+
+        var imagen = urlParams.get('imagen');
+        var imagenhtml = document.getElementById('imagen')
+        imagenhtml.src =imagen
+        console.log(imagen)
+        
+        var descripcion = urlParams.get('descripcion');
+        var descripcionhtml = document.getElementById('descripcion')
+        descripcionhtml.innerHTML =descripcion
+        console.log(descripcion)
+        </script>
+
     </body>
 </html>
