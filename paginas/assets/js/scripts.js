@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-/* Inicio carrito pagar*/
+/* Inicio carrito pagar con jquery*/
 var total_carro = parseInt($("#subtotal_3").text())+
 parseInt($("#subtotal_2").text())+
 parseInt($("#subtotal_1").text());  
@@ -115,8 +115,7 @@ $('#Standard').click(function(){
 $('#Express').click(function(){
         $('#gran_total').val(parseInt($('input:radio[name=precio_envio]:checked').val())+parseInt($('#total').text()));
 });
-/* Fin carrito pagar*/
-
+/* Fin carrito pagar con jquery*/
 
 
 });
