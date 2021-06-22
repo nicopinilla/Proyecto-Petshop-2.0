@@ -190,9 +190,13 @@ width: auto  !important;
     width: 100% !important;
 }
 
-/*fin carrito pagar*/
+/*fin carrito pagar*/   
 .nota_especial{
     line-height: 24px;
     color: #0a6a77;
     font-size: 16px;
+}
+.need_help {
+    pointer-events: none;
+    cursor: default;
 }
